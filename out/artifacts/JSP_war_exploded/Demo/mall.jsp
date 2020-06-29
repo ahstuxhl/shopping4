@@ -22,7 +22,14 @@
     vegetables.put("potato",1.5);
     vegetables.put("cucumber",2.0);
     vegetables.put("corn",2.5);
+    if(car==null){
+        car.put("tomato",0);
+        car.put("potato",0);
+        car.put("cucumber",0);
+        car.put("corn",0);
+    }
 %>
+
 <h1>农家蔬菜店</h1>
 <%
     String name=(String)session.getAttribute("username");
@@ -38,11 +45,25 @@
     <tr>
         <td>tomato</td>
         <td>3.5</td>
-        <td><a href="car.jsp" name="tomato">购买</a> </td>
+        <td><a href="buy.jsp" name="tomato">购买</a> </td>
+    </tr>
+    <tr>
+        <td>potato</td>
+        <td>1.5</td>
+        <td><a href="buy.jsp" name="potato">购买</a> </td>
+    </tr>
+    <tr>
+        <td>cucumber</td>
+        <td>2.0</td>
+        <td><a href="buy.jsp" name="cucumber">购买</a> </td>
+    </tr>
+    <tr>
+        <td>corn</td>
+        <td>2.5</td>
+        <td><a href="buy.jsp" name="corn">购买</a> </td>
     </tr>
 
-
-
 </table>
+<a href="car.jsp">购物车</a>
 </body>
-</html>
+</htmlf>
