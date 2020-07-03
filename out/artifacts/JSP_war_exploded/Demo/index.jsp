@@ -14,7 +14,7 @@
 当前登录用户<%=session.getAttribute("name")%>;
 <%
     if (session.getAttribute("name") != null) {
-        out.println("<a href='logout.jsp'>注销</a>");
+        out.println("<a href='logout.jsp'>进入商城</a>");
     } else {
         out.println("<a href='login.html'>请登录</a>");
     }

@@ -11,18 +11,18 @@
     <title>Title</title>
 </head>
 <body>
-   username=<%=request.getParameter("username")%>;
-   password=<%=request.getParameter("password")%>
+      username = <%=request.getParameter("username")%>;
+      password = <%=request.getParameter("password")%>;
    <%
        String username = request.getParameter("username");
        String password = request.getParameter("password");
        if (username.equals("tom")&&password.equals("123")) {
            out.println("welcome " + username);
            session.setAttribute("name", username);//创建session 并向表中增加一行name(如果已经存在就会覆盖)
-           response.sendRedirect("mall.jsp");
+           out.println("<a href='mall.jsp'>进入商城</a>");
        } else {
            out.println("登陆失败");
-           response.sendRedirect("login.html");
+           out.println("<a href='login.html'>请登录</a>");
        }
    %>
 
