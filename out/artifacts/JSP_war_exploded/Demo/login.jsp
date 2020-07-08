@@ -11,8 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-      username = <%=request.getParameter("username")%>;
-      password = <%=request.getParameter("password")%>;
    <%
        String username = request.getParameter("username");
        String password = request.getParameter("password");
@@ -22,7 +20,7 @@
            out.println("<a href='mall.jsp'>进入商城</a>");
        } else {
            out.println("登陆失败");
-           out.println("<a href='login.html'>请登录</a>");
+           out.println("<a href='login.html'>请重新登录</a>");
        }
    %>
 
